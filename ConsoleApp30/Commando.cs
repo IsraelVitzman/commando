@@ -8,28 +8,50 @@ namespace ConsoleApp30
 {
     internal class Commando
     {
-        private string name;
-        private string codeName;
+        private string name {  get; set; }
+        private string codeName {  get; set; }
         private string status;
+        private string weapon;
 
-        private string[] weapon = { "Chisel", " bag", "hammer", "rope", "water" };
+        private string[] listweapon = { "Chisel", " bag", "hammer", "rope", "water" };
         private string[] listStatus = { "stande", "going", "hiding" };
-        public Commando(string name, string codeName, string[] weapon, int chengeStatus)
+        public Commando(string name, string codeName,int chengeWeapon, int chengeStatus)
         {
             this.name = name;
             this.codeName = codeName;
-            this.weapon = weapon;
+            this.weapon = listweapon[chengeWeapon];
             this.status = listStatus[chengeStatus];
 
         }
-        public void alk()
+        public string getcodeName()
+        {
+           return this.codeName;
+        }
+        public string getName()
+        {
+            return this.name;
+        }
+        public void setcodeName(string codeName)
+        {
+             this.codeName=codeName;
+        }
+        public void setName(string name)
+        {
+            this.name = name;
+        }
+
+
+
+
+
+        public void walk()
         { 
            this.status=listStatus[1];
            Console.WriteLine(this.status);
         }
         public void Hide()
         {
-            this.status = listStatus[listStatus.Length];
+            this.status = listStatus[listStatus.Length-1];
             Console.WriteLine(this.status);
         }
         public void attack()
