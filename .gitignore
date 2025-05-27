@@ -1,0 +1,19 @@
+# תיקיות Build
+bin/
+obj/
+
+# קבצים זמניים של Visual Studio
+.vs/
+*.user
+*.suo
+
+# קבצים של מערכת
+*.log
+*.tmp
+*.cache
+
+# קבצים אישיים
+*.DotSettings.user
+
+# פרויקטים ספציפיים
+TestResults/
