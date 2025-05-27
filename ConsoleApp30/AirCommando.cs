@@ -5,10 +5,10 @@ internal class AirCommando : Commando
 {
     private string parachutist;
 
-    public AirCommando(string name, string codeName, int changeWeapon, int changeStatus, string parachutist)
+    public AirCommando(string name, string codeName, int changeWeapon, int changeStatus)
         : base(name, codeName, changeWeapon, changeStatus)
     {
-        this.parachutist = parachutist;
+        parachutist = " i am parachutist";
     }
 
     public void ShowInfo()
@@ -18,5 +18,9 @@ internal class AirCommando : Commando
         Console.WriteLine($"Weapon: {this.weapon}");
         Console.WriteLine($"Status: {this.status}");
         Console.WriteLine($"Parachutist: {parachutist}");
+    }
+    public override void attack()
+    {
+        Console.WriteLine($"attack now sssssssshhh: {this.codeName}");
     }
 }

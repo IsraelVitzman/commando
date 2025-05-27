@@ -57,7 +57,7 @@ namespace ConsoleApp30
             this.status = listStatus[listStatus.Length-1];
             Console.WriteLine(this.status);
         }
-        public void attack()
+        public virtual void attack()
         {
             Console.WriteLine($"attack now: {this.codeName}");
         }
