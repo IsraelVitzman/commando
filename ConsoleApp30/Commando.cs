@@ -8,13 +8,16 @@ namespace ConsoleApp30
 {
     internal class Commando
     {
-        private string name {  get; set; }
-        private string codeName {  get; set; }
-        private string status;
-        private string weapon;
+        public string name {  get; set; }
+        public string codeName {  get; set; }
+
+        protected string status;
+        protected string weapon;
+
 
         private string[] listweapon = { "Chisel", " bag", "hammer", "rope", "water" };
         private string[] listStatus = { "stande", "going", "hiding" };
+
         public Commando(string name, string codeName,int chengeWeapon, int chengeStatus)
         {
             this.name = name;
