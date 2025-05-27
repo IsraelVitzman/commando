@@ -10,11 +10,18 @@ namespace ConsoleApp30
     {   
         private string name;
         private string manufacturer;
-        private int 
-        public Weapon() 
+        private int balls;
+        public Weapon(string name,string manufacturer, int balls) 
         {
+            this.name = name;
+            this.manufacturer = manufacturer;
+            this.balls = balls;
         
-        
+        }
+        public  void shoot()
+        {
+            Console.WriteLine("shoot.... boom!!!!!!!");
+            this.balls-= 1;
         }
 
     }
