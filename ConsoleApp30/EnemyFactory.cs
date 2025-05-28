@@ -18,7 +18,7 @@ namespace ConsoleApp30
         }
         public void add (string name, bool ifLife, string life, string voice)
         {
-            EnemyFactory enemyFactory = new EnemyFactory(name, ifLife, life, voice);    
+            EnemyFactory enemyFactory = new EnemyFactory (name, ifLife, life, voice); 
             responcibilities.Add(enemyFactory);
         }
         

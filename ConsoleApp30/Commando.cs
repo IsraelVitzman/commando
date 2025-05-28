@@ -8,8 +8,8 @@ namespace ConsoleApp30
 {
     internal class Commando
     {
-        public string name {  get; set; }
-        public string codeName {  get; set; }
+        public string name;
+        public string codeName;
 
         protected string status;
         protected string weapon;

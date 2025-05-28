@@ -45,9 +45,13 @@
   <ItemGroup>
     <Compile Include="Abstrction.cs" />
     <Compile Include="AirCommando.cs" />
+    <Compile Include="weponlist.cs" />
     <Compile Include="Commando.cs" />
+    <Compile Include="EnemyFactory.cs" />
+    <Compile Include="EnemyFactoryCommando.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="responcibility.cs" />
     <Compile Include="SeaCommando.cs" />
     <Compile Include="weapon.cs" />
   </ItemGroup>
